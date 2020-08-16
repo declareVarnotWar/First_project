@@ -1,0 +1,104 @@
+html {
+    scroll-behavior:smooth;
+}
+body {
+    background-color:#F2F3F4;
+}
+button {
+    width:100%;
+    border:3px solid #DF9965;
+    background-color:white;
+}
+h1 {
+    text-align:center;
+    width:100%;
+    color:#DF9965;
+    font-size:30px;
+    border: 4px dashed #5F7425;
+    margin:10px;
+    top:5px;
+    font-family: Impact , Charcoal, sans-serif;
+    text-shadow: 3px 2px 5px #5F7425;
+}
+form {
+    background-color:#5F7425;    
+    width:100%;
+    max-width:95%;
+    padding:10px 5% 5% 10px;
+    margin:5px;
+    text-align:left;
+    border:3px solid #cecece;
+    border-radius:15px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+.markup {
+    font-size:30px;
+    color:#DF9965;
+    text-decoration:underline;
+}
+
+.small_markup {
+    font-size:20px;
+}
+a {
+    cursor:crosshair;
+}
+a:link {
+    color:#DF9965;
+    text-decoration:underline;
+}
+a:visited {
+    color:brown;
+    text-decoration:line-through ;
+}
+a:hover {
+    color:orange;
+    text-transform:uppercase;
+    text-decoration:underline;
+    
+}
+input[type = text], input[type = password], input[type = email] {
+    font-style:italic;
+    width:75%;
+    margin:10px;
+    padding:5px; 
+    border:2px solid #67737F;
+    border-radius:10px;
+    
+}
+input[type = radio] {
+    margin:5px;
+    padding:5px;
+}
+input[type = submit] {
+    width:100%;
+    border:2px solid #67737F;
+    border-radius:10px;
+}
+textarea {
+    font-style:italic;
+    width:75%;
+    margin:20px;
+    padding:7px; 
+    border:3px solid #67737F;
+    background-color:#efefef;
+    color:#787575;
+    outline:none;
+    border-radius:17px;
+}
+img {
+    width:100%;
+    height:auto;
+}
+article {
+    font-style:oblique;
+    position:static;
+    background-color:white;
+    width:100%;
+    height:auto;
+    margin:10px;
+    padding:5px; 
+    border:2px solid #5F7425;
+    color:#787575;
+    border-radius:10px;
+}
