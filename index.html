@@ -1,169 +1,193 @@
 <!DOCTYPE HTML>
 <html>
-<head><title>Noob login page</title></head>
-<body>
-    <h1>Sololearn Login</h1>
-    <form ìd = "form" method = "post" action = "https://www.sololearn.com">
-        <p>Please enter your <B><span class = "markup">Username, Email</span></B> and <B><span class= "markup">Password</span></B> dear</p>
-        
-        Email Address <input id = 'input1' type= "email" name = "email" list = "email_tags" placeholder = "email@example.com" autofocus required/>
-        <datalist id = "email_tags">
-            <option value = "@gmail.com">
-            <option value = "@yahoo.com">
-            <option value = "@yahoo.com.vn">
-            <option value = "@hotmail.com">
-        </datalist>
-        <br/>
-        Username <input id ='input2' type = "text" name = "username" placeholder = "declareVars_notWars" required/>
-        <br/>
-        Password <input id ='input3' type = "password" name = "password" placeholder = "Yur password" required/>
-        <br/><hr/>
-        
-        <p>What's your <span class= "markup"><B>gender</B></span>?</p>
-        <input type= "radio" name= "gender" value= "male" required> Male
-        <br/>
-        <input type= "radio" name= "gender" value= "female" required> Female
-        <br/>
-        <input type= "radio" name= "gender" value="other" required> Other
-        <br/>
-        <input type= "radio" name= "gender" value= "no!" required> Rather not tell
-        <br/><br/><hr/>
-        <label for = "message">Leave a <B><span class = "markup">message</span></B><span class = "small_markup">(optional)</span></label><br/>
-        <textarea id = 'input4' name= "message" placeholder = "I was so young when I was born"></textarea>
-        <br/><hr/>
-        <input id = 'input5' type = "submit" name = "submit" onclick = 'thumbsup2()'>
+  <head>
+    <title>Noob login page</title>
+  </head>
+  <body>
+    <h1 onclick = "bottom()" id = "h1_1">Sololearn Login</h1>
+    <form id = "form" method = "post" action = "https://www.sololearn.com">
+      <p>Please enter your <B><span class = "markup">Username, Email</span></B> and <B><span class= "markup">Password</span></B> </p>
+      <br/>
+      Email Address <input id = 'input1' type= "email" name = "email" list = "email_tags" placeholder = "email@example.com" autofocus required/>
+      <datalist id = "email_tags">
+        <option value = "@gmail.com">
+        <option value = "@yahoo.com">
+        <option value = "@yahoo.com.vn">
+        <option value = "@hotmail.com">
+      </datalist>
+      <br/>
+      Username <input id ='input2' type = "text" name = "username" placeholder = "declareVars_notWars" required/>
+      <br/>
+      Password <input id ='input3' type = "password" name = "password" placeholder = "Yur password" required/>
+      <br/><hr/>
+      <p>What's your <span class= "markup"><B>gender</B></span>?</p>
+      <input type= "radio" name= "gender" value= "male" required> Male
+      <br/>
+      <input type= "radio" name= "gender" value= "female" required> Female
+      <br/>
+      <input type= "radio" name= "gender" value="other" required> Other
+      <br/>
+      <input type= "radio" name= "gender" value= "no!" required> Rather not tell
+      <br/><br/><hr/>
+      <label for = "message">Leave a <B><span class = "markup">message</span></B><span class = "small_markup">(optional)</span></label><br/>
+      <textarea id = 'input4' name= "message" placeholder = "I was so young when I was born"></textarea>
+      <br/><hr/>
+      <input id = 'input5' type = "submit" name = "submit" onclick = 'thumbsup2()'>
     </form>
     <br/><br/>
-    
-    <h1> - About Sololearn - </h1>
+    <h1 onclick = "bottom()" id = "aboutsololearn"> - About Sololearn - </h1>
     <article id = " - About Sololearn - ">
     <br/>
-    <div><img id ="img" src = "https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg"/></div>
+    <div id = "img_container">
+    <img id ="img" src = "https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg"/>    
+    </div>
+    <div id = "paragraph">
     <p id = "article_content">...I've been working towards learning more about programming and coding languages outside of the classroom, because I want to stand out more when applying for jobs after college. One of my favorite ways to learn is through interactive apps, especially free ones, so I was excited to discover the SoloLearn app so I could develop my programming skills further. Here is my review of the free SoloLearn app for programming and coding in honor of Computer Science Education Week- read more about Computer Science Education Week and the Hour of Code here.
-
-What is SoloLearn?
-SoloLearn is a series of free apps that allows users to learn a variety of programming languages and concepts through short lessons, code challenges, and quizzes. Lessons are written with the beginner in mind, so anyone can learn to read and write their own code. SoloLearn is available for free download for iOS on the App Store here and for Android on Google Play here. SoloLearn courses can also be accessed online here.
-
-Available languages
-SoloLearn has lessons for the following programming languages and concepts. Users can take as many lessons as they want for free.
-
-Web development (HTML5, CSS3, JavaScript, JQuery)
-Python
-Java
-Kotlin
-C++
-C
-C#
-PHP
-SQL
-Algorithms and data structures
-Ruby
-Machine learning
-Design Patterns
-Swift
-Git... 
+    What is SoloLearn?
+    SoloLearn is a series of free apps that allows users to learn a variety of programming languages and concepts through short lessons, code challenges, and quizzes. Lessons are written with the beginner in mind, so anyone can learn to read and write their own code. SoloLearn is available for free download for iOS on the App Store here and for Android on Google Play here. SoloLearn courses can also be accessed online here.
+    <span>
+    Available languages
+    SoloLearn has lessons for the following programming languages and concepts. Users can take as many lessons as they want for free.
+    Web development (HTML5, CSS3, JavaScript, JQuery)
+    Python
+    Java
+    Kotlin
+    C++
+    C
+    C#
+    PHP
+    SQL
+    Algorithms and data structures
+    Ruby
+    Machine learning
+    Design Patterns
+    Swift
+    Git...
+    </span>
     </p>
-
-    <em id = "full_post">Check out full article<span class = "small_markup"><a target = "_blank" onclick = "thumbsup()" href = "https://www.perkinselearning.org/technology/blog/sololearn-programming-app-review"> here</a></span></em>
-    
+    </div>
+    <em id = "full_post"><span class = "small_markup">Check out full article</span><span class = "small_markup"><a target = "_blank" onclick = "thumbsup()" href = "https://www.perkinselearning.org/technology/blog/sololearn-programming-app-review"> here</a></span>  
+    </em> 
     </article>
     <br/><hr/><br/>
-    <button id = 'button' onclick = "visual_mode()"><span class = "markup">tap to switch between light/dark mode</span></button>
-    
-    
+    <nav>
+    <div id = "menu"><a>Visual Themes</a>
+    <div id = "dropdown">
+    <a onclick = "dark()" href = "#" id = "dark">dark</a>
+    <a onclick = "light()" href = "#" id = "light">light</a>
+    <a onclick = "default_mode()" href = "#" id = "default">default</a>
+    </div>
+    </div>
+    </nav>
     <script>
-    
-        var imgs = [
-            "https://botayit.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-Premium-1140x694.jpg",
-            
-            "https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg",
-            
-            "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
-            
-            "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
-            
-            "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
-            
-            "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
-            
-            "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
-            
-        
-            "https://edtechbyod.files.wordpress.com/2016/04/sololearn.png?w=620",
-            
-            "https://www.how2shout.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-for-Free.jpg",
-            
-            "https://missthoitrang.com/uploads/ab.jpg",
-            
-            "data:image/png;base64,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",
-            
-            "https://miro.medium.com/max/12032/0*__5nhm_2qHSrTVoZ",
-            
-            "https://www.techsignin.com/wp-content/uploads/2018/01/linux-linus-torvalds-su-co-chip-cpu-intel-meltdown-spectre3.jpg",
-            
-            "https://cms.qz.com/wp-content/uploads/2019/05/TimBLOfficial-5-e1562855311586.jpg?quality=75&strip=all&w=1600&h=900&crop=1",
-            
-            "https://st.quantrimang.com/photos/image/2019/06/06/steve-jobs-va-bi-quyet-dat-duoc-muc-tieu-da-de-ra640-size-640x335-znd.jpg",
-            
-            "https://s.marketwatch.com/public/resources/images/MW-IE117_gates__ZH_20200409090409.jpg",
-            
-            "https://luxury-inside.vn/data/uploads/2019/09/elon-musk-2-e1568721330744.jpg",
-            
-            "https://icdn.dantri.com.vn/zoom/1200_630/2018/9/16/jeffbezos-15370806645891685215341.jpg",
-        ]
-        var img = document.getElementById('img')
-        var index = 0
-        var article = document.getElementById(' - About Sololearn - ')
-        var button = document.getElementById('button')
-        var mode = 0
-        
-        
-        
-        
-        function slide_show() {
-            index++;
-            if (index >= imgs.length) {
-                index = 0;
-            }
-            img.src = imgs[index];
-        }
-        setInterval(slide_show, 2000)
-        
-    
-        
-        function thumbsup() {
-            alert('One single thumb_up means the world to me :3');
-            confirm("Directing to 'https://www.perkinselearning.org/technology/blog/sololearn-programming-app-review' via new tab, sure you wanna leave this page?");
-        }
-
-        function thumbsup() {
-            alert('One single thumb_up means the world to me :3');
-            confirm("Directing to 'https://www.sololearn.com' via new tab, sure you wanna leave this page?");            
-        }
-        
-        
-        function visual_mode() {
-            //darkmode
-            if (mode == 0) {
-                mode++;
-                document.body.style.background = '#222222';
-                article.style.background = '#3D3D3D';
-                article.style.color = '#F2F3F4';
-                button.style.background = '#3D3D3D';
-                return mode;
-                
-            //lightmode
-            } else {
-                mode = 0;
-                document.body.style.background = '#F2F3F4';
-                article.style.background = 'white';
-                article.style.color = 'black';
-                button.style.background = 'white';
-            }
-        }
-    
+      var imgs = [
+       "https://botayit.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-Premium-1140x694.jpg",
+          
+          "https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+          "https://pbs.twimg.com/media/Dvg_e5fWwAAK7vL.jpg:large",
+          
+      
+          "https://edtechbyod.files.wordpress.com/2016/04/sololearn.png?w=620",
+          
+          "https://www.how2shout.com/wp-content/uploads/2019/11/SoloLearn-Learn-to-Code-for-Free.jpg",
+          
+          "https://missthoitrang.com/uploads/ab.jpg",
+          
+          "https://miro.medium.com/max/12032/0*__5nhm_2qHSrTVoZ",
+          
+          "https://www.techsignin.com/wp-content/uploads/2018/01/linux-linus-torvalds-su-co-chip-cpu-intel-meltdown-spectre3.jpg",
+          
+          "https://cms.qz.com/wp-content/uploads/2019/05/TimBLOfficial-5-e1562855311586.jpg?quality=75&strip=all&w=1600&h=900&crop=1",
+          
+          "https://st.quantrimang.com/photos/image/2019/06/06/steve-jobs-va-bi-quyet-dat-duoc-muc-tieu-da-de-ra640-size-640x335-znd.jpg",
+          
+          "https://s.marketwatch.com/public/resources/images/MW-IE117_gates__ZH_20200409090409.jpg",
+          
+          "https://luxury-inside.vn/data/uploads/2019/09/elon-musk-2-e1568721330744.jpg",
+          
+          "https://icdn.dantri.com.vn/zoom/1200_630/2018/9/16/jeffbezos-15370806645891685215341.jpg",
+      ]
+      var img = document.getElementById('img')
+      var article = document.getElementById(' - About Sololearn - ')
+      var button = document.getElementById('button')
+      var h1_1 = document.getElementById('h1_1')
+      var index = 0
+      var mode = 0
+      
+      function bottom() {
+          window.scroll({
+              top:2500,
+              left:0,
+              behavior: 'smooth',
+          })
+      }
+      
+      function blink() {
+          if (mode == 0) {
+              h1_1.innerHTML = "Tap me !";
+              mode++;
+          } else {
+              h1_1.innerHTML = "Sololearn Login !"
+              mode = 0;
+          }
+      }
+      setInterval(blink, 3000)
+      
+      function slide_show() {
+          index++;
+          if (index > imgs.length) {
+              index=0;
+          }
+          img.src = imgs[index];
+      }
+      setInterval(slide_show, 3000)
+      
+      function thumbsup() {
+          alert('One single thumb_up means the world to me :3');
+          confirm("Directing to 'https://www.perkinselearning.org/technology/blog/sololearn-programming-app-review' via new tab, sure you wanna leave this page?");
+      }
+      
+      function thumbsup2() {
+          alert('One single thumb_up means the world to me :3');
+          confirm("Directing to 'https://www.sololearn.com' via new tab, sure you wanna leave this page?");
+      }             
+      
+      function dark() {
+          document.body.style.background = '#222222';
+          article.style.background = '#3D3D3D';
+          article.style.color = '#EBEBE8';
+          window.scroll({
+              top:0,
+              left:0,
+              behavior: 'smooth',  
+          })
+          h1_1.innerHTML = "Sololearn Login";
+      }
+              
+      function light() {
+          document.body.style.background = '#EBEBE8';
+          article.style.background = 'white';
+          article.style.color = 'black';
+          window.scroll({
+              top:0,
+              left:0,
+              behavior: 'smooth',  
+          })
+          h1_1.innerHTML = "Sololearn Login";
+      }
+      
+      function default_mode() {
+          document.body.style.backgroundImage = "url('http://www.sololearn.com/images/bg2.jpg')";
+          article.style.background = 'white';
+          article.style.color = 'black';
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
